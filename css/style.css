@@ -1,8 +1,9 @@
+/* dispositivi LG */
 .container {
-  margin: 60px auto;
+  padding: 20px;
 }
 
-h1 {
+h2 {
   margin: 20px 0;
 }
 img {
@@ -33,6 +34,55 @@ h3 {
   border-radius: 50%;
   padding: 30px
 }
-#why p {
+hr {
   margin-bottom: 30px;
+}
+
+
+/* dispositivi XS */
+@media screen and (max-width: 767px) {
+
+  .container {
+    padding: 10px;
+  }
+
+  #lezioni .left,
+  #lezioni .right {
+    margin: 15px 0;
+  }
+
+  #steps .left,
+  #steps .right {
+    margin: 15px 0;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  body .container:first-child,
+  body .container:last-child {
+    background-color: beige;
+  }
+}
+
+
+/* dispositivi MD */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  .container {
+    padding: 15px;
+  }
+
+  #steps .right {
+    float: none;
+  }
+
+  #why .third {
+    float: none;
+  }
+
+  hr {
+    display: none;
+  }
 }
